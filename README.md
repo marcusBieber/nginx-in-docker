@@ -8,17 +8,22 @@ Hosten einer Website mit Nginx in einem Container
     ```bash
     git clone https://github.com/marcusBieber/nginx-in-docker.git
     ```
-2. **Image erstellen**:
+2. **In Verzeichnis navigieren**:
+
+    ```bash
+    cd nginx-in-docker
+    ```
+3. **Image erstellen**:
 
     ```bash
     docker build -t nginx-in-docker .
     ```
-3. **Container starten**:
+4. **Container starten**:
 
     ```bash
     docker run -d -p 80:80 nginx-in-docker
     ```
-4. **Im Browser aufrufen**:
+5. **Im Browser aufrufen**:
 
     ```bash
     http://localhost:80
